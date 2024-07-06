@@ -22,9 +22,7 @@ class DetailPageView(DetailView):
 class UpdatePageView(UpdateView):
     template_name = "post_update.html"
     model = Publicaciones
-    fields = [
-        "titulo", "descripcion"
-    ]
+    fields = ["titulo", "descripcion"]
 
 class CreatePageView(CreateView):
     template_name = "post_create.html"
