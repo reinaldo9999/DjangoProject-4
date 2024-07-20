@@ -4,9 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView
 
-
 # Create your views here.
-
 
 class SignupView(CreateView):
 
@@ -17,3 +15,9 @@ class SignupView(CreateView):
 class FirstPage(TemplateView):
 
     template_name= "registration/first_page.html"
+
+class LogoutPageView(TemplateView):
+    
+    template_name= "registration/logout.html"
+
+
